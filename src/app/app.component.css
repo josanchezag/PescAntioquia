@@ -1,0 +1,26 @@
+#initialContainer{
+    background-color: #f1fded;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#handleBttn{    
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-gap:5 px;
+    margin: 5px 0px;
+    padding: 3px;
+    text-align: left;    
+}
+#menubtn{
+    font-family: inherit;
+    vertical-align: top;
+    
+}
+#handleBttn button{    
+    background: inherit;
+    border: 0PX;    
+}
+#handleBttn button:hover,
+.actived {
+  background: #2fb503
+}
