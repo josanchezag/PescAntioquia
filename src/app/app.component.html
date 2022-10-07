@@ -1,23 +1,33 @@
-<div id="initialContainer">  
+<div id="initialContainer">
   <header id="handleBttn">
-    
-    <button id="menubtn" mat-flat-button [matMenuTriggerFor]="menu">Menu</button>
+    <button id="menubtn" mat-flat-button [matMenuTriggerFor]="menu">
+      Menu
+    </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>Misi&oacute;n y visi&oacute;n</button>
       <button mat-menu-item>Torneos</button>
     </mat-menu>
-    
+
     <div id="separator"></div>
     <div id="btnfb">
-      <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
-        <mat-icon [ngStyle]="{'color':'#89ee68'}" >home</mat-icon>
+      <button
+        mat-icon-button
+        color="primary"
+        aria-label="Example icon button with a home icon"
+      >
+        <mat-icon [ngStyle]="{ color: '#89ee68' }">home</mat-icon>
       </button>
-      <button><mat-icon><a href="https://www.facebook.com/clubpescantioquia">facebook</a></mat-icon></button>      
+      <button>
+        <mat-icon
+          ><a href="https://www.facebook.com/clubpescantioquia"
+            >facebook</a
+          ></mat-icon
+        >
+      </button>
     </div>
   </header>
-  <div>    
+  <div>
+    <img src="../assets/img/equipoCompleto.jpg" />
   </div>
-  <footer>
-    Marca registrada
-  </footer>
+  <footer>Marca registrada</footer>
 </div>
