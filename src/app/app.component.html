@@ -18,16 +18,21 @@
         <mat-icon [ngStyle]="{ color: '#89ee68' }">home</mat-icon>
       </button>
       <button>
-        <mat-icon
-          ><a href="https://www.facebook.com/clubpescantioquia"
-            >facebook</a
-          ></mat-icon
-        >
+        <mat-icon>
+          <a href="https://www.facebook.com/clubpescantioquia">facebook</a>
+        </mat-icon>
       </button>
     </div>
   </header>
-  <div>
-    <img src="../assets/img/equipoCompleto.jpg" />
+  <div id="manejador">
+    <section id="content">
+      <router-outlet></router-outlet>
+    </section>
+  </div>
+  <div id="manejador">
+    <section id="content">
+      <router-outlet></router-outlet>
+    </section>
   </div>
   <footer>Marca registrada</footer>
 </div>
