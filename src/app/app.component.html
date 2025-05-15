@@ -4,24 +4,24 @@
       Menu
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>Misi&oacute;n y visi&oacute;n</button>
-      <button mat-menu-item>Torneos</button>
+      <button mat-menu-item [routerLink]="['/mision-vision']">Misi&oacute;n y visi&oacute;n</button>
+      <button mat-menu-item [routerLink]="['/torneos']">Torneos</button>
     </mat-menu>
 
     <div id="separator"></div>
     <div id="btnfb">
       <button
         mat-icon-button
-        color="primary"
-        aria-label="Example icon button with a home icon"
+        [routerLink]="['/']"
+        aria-label="Botón de inicio"
       >
         <mat-icon [ngStyle]="{ color: '#89ee68' }">home</mat-icon>
       </button>
-      <button>
-        <mat-icon>
-          <a href="https://www.facebook.com/clubpescantioquia">facebook</a>
-        </mat-icon>
-      </button>
+      <a href="https://www.facebook.com/clubpescantioquia" target="_blank">
+        <button mat-icon-button>
+          <mat-icon>facebook</mat-icon>
+        </button>
+      </a>
     </div>
   </header>
   <div id="manejador">
@@ -29,10 +29,17 @@
       <router-outlet></router-outlet>
     </section>
   </div>
-  <div id="manejador">
-    <section id="content">
-      <router-outlet></router-outlet>
-    </section>
-  </div>
-  <footer>Marca registrada</footer>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="copyright">
+        © {{currentYear}} Todos los derechos reservados | Josimar Sanchez
+      </div>
+      <div class="contact">
+        <a href="mailto:josanchezag@gmail.com">
+          <mat-icon>email</mat-icon>
+          josanchezag@gmail.com
+        </a>
+      </div>
+    </div>
+  </footer>
 </div>

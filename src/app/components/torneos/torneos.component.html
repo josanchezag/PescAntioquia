@@ -1,0 +1,15 @@
+<div class="torneos-container">
+  <h1>Próximos Torneos</h1>
+  
+  <div class="torneos-grid">
+    <div class="torneo-card" *ngFor="let torneo of torneos">
+      <h2>{{torneo.nombre}}</h2>
+      <div class="torneo-info">
+        <p><strong>Fecha:</strong> {{torneo.fecha}}</p>
+        <p><strong>Lugar:</strong> {{torneo.lugar}}</p>
+        <p><strong>Modalidad:</strong> {{torneo.modalidad}}</p>
+      </div>
+      <button mat-raised-button color="primary">Inscribirse</button>
+    </div>
+  </div>
+</div> 

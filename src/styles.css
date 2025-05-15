@@ -1,4 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {
+  /* Paleta de colores principal */
+  --primary-color: #1B4332;     /* Verde oscuro - Color principal */
+  --secondary-color: #2D6A4F;   /* Verde medio - Color secundario */
+  --accent-color: #40916C;      /* Verde claro - Acentos */
+  --hover-color: #52B788;       /* Verde brillante - Hover */
+  
+  /* Colores neutros */
+  --background-color: #F8FAF9;  /* Fondo principal */
+  --surface-color: #FFFFFF;     /* Superficies de componentes */
+  --text-primary: #1B1B1B;      /* Texto principal */
+  --text-secondary: #4A4A4A;    /* Texto secundario */
+  
+  /* Espaciado */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  /* Bordes y sombras */
+  --border-radius: 8px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos base */
+html, body { 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* Estilos de botones globales */
+button {
+  font-family: 'Poppins', sans-serif;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Utilidades */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Media queries base */
+@media (max-width: 768px) {
+  :root {
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+  }
+}
